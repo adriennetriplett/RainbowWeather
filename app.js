@@ -20,7 +20,7 @@ function getResults(query) {
 
 function displayResults(weather) {
 
-    let city = document.querySelector('.location .city');
+    let city = document.querySelector('.location .city', 'location.state');
     city.innerText = `${weather.name}`, `${weather.state}`;
 
     let now = new Date();
